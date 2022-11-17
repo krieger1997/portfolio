@@ -46,12 +46,13 @@ body::-webkit-scrollbar-thumb {
     margin-left: 15%;
     height: 100px;
     padding-top: 150px;
+    filter: drop-shadow(15px 20px 5px rgb(0 0 0 / 0.4));
 }
 
 .titulo {
     color: rgb(255, 246, 239);
     font-family: 'Press Start 2P', cursive;
-    font-size: 30px;
+    font-size: 50px;
     /* margin-top: 30px; */
     grid-column: 1;
     grid-row: 1;
@@ -60,6 +61,8 @@ body::-webkit-scrollbar-thumb {
 .svg {
     grid-column: 2;
     grid-row: 1;
+    display: flex;
+    justify-content: center;
 }
 
 #xwing {
@@ -100,4 +103,10 @@ body::-webkit-scrollbar-thumb {
         transform: translateY(4px);
     }
 
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
 }
