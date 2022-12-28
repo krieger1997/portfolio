@@ -149,7 +149,16 @@ body::-webkit-scrollbar-thumb {
     height: fit-content;
 }
 svg{
-    fill: #04BFBF;
+    fill: #93e5e5;
+    box-shadow: inset 0 0 .2rem #04BFBF,
+        0 0 .2rem #04BFBF,
+        0 0 2rem #04BFBF,
+        0 0 0.8rem #04BFBF,
+        0 0 2.8rem #04BFBF,
+        inset 0 0 1.3rem #04BFBF;
+}
+#github_icono{
+    border-radius: 50%;
 }
 
 @media only screen and (max-width: 768px) {
