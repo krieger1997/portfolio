@@ -31,8 +31,35 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container {
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
     min-height: 70vh;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2%;
+}
+#nav>div{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgba(111,23,75, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(26, 71, 101, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    height: 2em;
+    color: #f2f2f2;
+    font-family: 'Chivo Mono', monospace;
+    transition: 0.7s;
+    cursor: pointer;
+}
+#nav>div:hover{
+    background-color: #04BFBF;
 }
 
 .container2 {
@@ -156,9 +183,22 @@ svg{
         0 0 0.8rem #04BFBF,
         0 0 2.8rem #04BFBF,
         inset 0 0 1.3rem #04BFBF;
+    transition: 0.3s;
+}
+svg:hover{
+    fill: #cef1f1;
+    box-shadow: inset 0 0 .2rem #52ebeb,
+        0 0 .2rem #52ebeb,
+        0 0 2rem #52ebeb,
+        0 0 0.8rem #52ebeb,
+        0 0 2.8rem #52ebeb,
+        inset 0 0 1.3rem #52ebeb;
 }
 #github_icono{
     border-radius: 50%;
+}
+#linkedin_icono{
+    border-radius: 10%;
 }
 
 @media only screen and (max-width: 768px) {
