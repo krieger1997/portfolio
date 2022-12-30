@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     min-height: 100vh;
@@ -40,6 +43,10 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row;
     justify-content: center;
     column-gap: 2%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
 #nav>div{
     width: 10%;
@@ -62,15 +69,13 @@ body::-webkit-scrollbar-thumb {
     background-color: #04BFBF;
 }
 
-.container2 {
-    min-height: 70vh;
-}
 
 #div_titulo {
     margin: 0 15%;
     margin-top: 7%;
     position: relative;
     padding: 5% 7%;
+    z-index: 1;
 
 /*glassmorfismo*/
     background: rgba(4, 191, 191, 0.05);
@@ -200,6 +205,91 @@ svg:hover{
 #linkedin_icono{
     border-radius: 10%;
 }
+
+
+
+.proyectos {
+    min-height: 70vh;
+    margin: 15% 15%;
+}
+.cards_div{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-around;
+}
+.card{
+    width: 30%;
+    background: rgba(4, 191, 191, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(26, 71, 101, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    height: 70%;
+}
+.card_imagen{
+    padding: 5%;
+}
+.card_imagen>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.card_titulo{
+    padding: 0 5%;
+    color: #f2f2f2;
+    font-weight: bolder;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 30px;
+}
+.card_descripcion{
+    padding: 0 5%;
+    color: #f2f2f280;
+    font-family: 'Chivo Mono', monospace;
+    font-size: 15px;
+    margin-bottom: 5%;
+}
+
+.borde_top_card{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 60%;
+    border-top: 5px solid #93e5e5;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #04BFBF,
+        0 0 0.8rem #04BFBF,
+        0 0 2.8rem #04BFBF,
+        inset 0 0 1.3rem #04BFBF;
+
+}
+.borde_bottom_card{
+    /* display: none; */
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    border-bottom: 5px solid #93e5e5;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #04BFBF,
+        0 0 0.8rem #04BFBF,
+        0 0 2.8rem #04BFBF,
+        inset 0 0 1.3rem #04BFBF;
+
+}
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
