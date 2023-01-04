@@ -252,9 +252,13 @@ svg:hover{
     font-size: 15px;
     margin-bottom: 5%;
 }
-
+.card:hover  .borde_top_card, .card:hover .borde_bottom_card {
+    visibility: visible;
+    opacity: 1;
+}
 .borde_top_card{
     /* display: none; */
+    
     position: absolute;
     top: 0;
     left: 20%;
@@ -266,10 +270,12 @@ svg:hover{
         0 0 0.8rem #04BFBF,
         0 0 2.8rem #04BFBF,
         inset 0 0 1.3rem #04BFBF;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ;
 
 }
 .borde_bottom_card{
-    /* display: none; */
     position: absolute;
     bottom: 0;
     left: 20%;
@@ -281,7 +287,9 @@ svg:hover{
         0 0 0.8rem #04BFBF,
         0 0 2.8rem #04BFBF,
         inset 0 0 1.3rem #04BFBF;
-
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ;
 }
 
 
